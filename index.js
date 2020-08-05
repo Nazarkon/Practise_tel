@@ -37,3 +37,13 @@ function reverseString(string){
 }
 reverseString('Ира')
 
+
+//4. Sum of element 
+
+    function  mul(a) {
+        return(b) => {
+            return a + b 
+        }
+    }
+    
+    console.log(mul(1)(2),'RES')
