@@ -16,3 +16,24 @@ function displayElements(){
     }
 }
 displayElements()
+
+//3. Reverse string
+
+//3.1 The first option
+function reverseString(string){
+
+    return string.split('').reverse('').join('')
+}
+reverseString('Ира')
+
+//3.2 The second option
+function reverseString(string){
+
+    let reversedString = '';
+    for(let i = string.length - 1; i >=0 ;i-- ){
+        reversedString += string[i]
+    }
+    return reversedString
+}
+reverseString('Ира')
+
