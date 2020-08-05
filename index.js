@@ -11,11 +11,13 @@ function sumTo(n){
 //2. Task#2
 
 function displayElements(){
-    for (var i = 0; i < 5; i++) {
+    for (let i = 0; i < 5; i++) {
+        setTimeout(() => {
             console.log(i);
+        },1000)
     }
 }
-// displayElements()
+ displayElements()
 
 //3. Reverse string
 
@@ -73,8 +75,8 @@ function isAnagram(firstWord,secondWord){
    }
 }
 
-isAnagram('finder', 'Friend')
-isAnagram('friend', 'find')
+// isAnagram('finder', 'Friend')
+// isAnagram('friend', 'find')
 
 //7. Fibonacci
 
@@ -86,4 +88,4 @@ function fibonachi(n){
         return fibonachi(n - 1) + fibonachi(n - 2);
     }
 }
-console.log(fibonachi(4))
+// console.log(fibonachi(4))
