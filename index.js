@@ -1,6 +1,3 @@
-console.log('Hello')
-
-
 //1. Sum to N
 function sumTo(n){
     let elemSum = 0;
@@ -11,3 +8,11 @@ function sumTo(n){
 }
 console.log(sumTo(5))
 
+//2. Task#2
+
+function displayElements(){
+    for (var i = 0; i < 5; i++) {
+            console.log(i);
+    }
+}
+displayElements()
