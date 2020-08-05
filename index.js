@@ -47,3 +47,12 @@ reverseString('Ира')
     }
     
     console.log(mul(1)(2),'RES')
+
+//5. Palindrom
+
+function checkForPalindrom(word){
+    const changedWord =  word.split('').reverse().join('');
+    return changedWord === word
+}
+console.log(checkForPalindrom('tenet'));
+console.log(checkForPalindrom('abc'))
