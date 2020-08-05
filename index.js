@@ -6,7 +6,7 @@ function sumTo(n){
     }
     return elemSum
 }
-console.log(sumTo(5))
+// console.log(sumTo(5))
 
 //2. Task#2
 
@@ -15,7 +15,7 @@ function displayElements(){
             console.log(i);
     }
 }
-displayElements()
+// displayElements()
 
 //3. Reverse string
 
@@ -46,7 +46,7 @@ reverseString('Ира')
         }
     }
     
-    console.log(mul(1)(2),'RES')
+    // console.log(mul(1)(2),'RES')
 
 //5. Palindrom
 
@@ -54,5 +54,24 @@ function checkForPalindrom(word){
     const changedWord =  word.split('').reverse().join('');
     return changedWord === word
 }
-console.log(checkForPalindrom('tenet'));
-console.log(checkForPalindrom('abc'))
+// console.log(checkForPalindrom('tenet'));
+// console.log(checkForPalindrom('abc'))
+
+//6. Check for Anagram
+
+function isAnagram(firstWord,secondWord){
+    let arrOfLetters = [];
+   if(firstWord.length === secondWord.length){
+         for(let i = 0; i < firstWord.length;i++){
+             if(secondWord.toLowerCase().includes(firstWord[i].toLowerCase())){
+                 arrOfLetters.push(firstWord[i])
+             }
+         }
+         return arrOfLetters.length === firstWord.length ? console.log('true') : console.log('false')
+   }else{
+       return console.log('false')
+   }
+}
+
+isAnagram('finder', 'Friend')
+isAnagram('friend', 'find')
