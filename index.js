@@ -42,13 +42,26 @@ reverseString('Ира')
 
 //4. Sum of element 
 
-    function  mul(a) {
-        return(b) => {
-            return a + b 
+
+function mul(fn){
+    return function curry(...args){
+        if(args.length >= fn.length){
+            return fn.apply(this,args)
+        }else{
+            return function (...args2){
+                return curry.apply(this,args.concat(args2))
+            }
         }
     }
-    
-    // console.log(mul(1)(2),'RES')
+}
+
+const sum = (a,b) => a + b;
+
+let startCurry = mul(sum)
+
+console.log(startCurry(1,2))
+console.log(startCurry(1)(2))
+  
 
 //5. Palindrom
 
