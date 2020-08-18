@@ -42,7 +42,7 @@ reverseString('Ира')
 
 //4. Sum of element 
 
-
+// слишком усложняешь
 function mul(fn){
     return function curry(...args){
         if(args.length >= fn.length){
@@ -74,6 +74,7 @@ function checkForPalindrom(word){
 
 //6. Check for Anagram
 
+// Решается через sort
 function isAnagram(firstWord,secondWord){
     let arrOfLetters = [];
    if(firstWord.length === secondWord.length){
@@ -102,3 +103,6 @@ function fibonachi(n){
     }
 }
 // console.log(fibonachi(4))
+
+// Почитай про кодстайл.
+// В целом все неплохо
